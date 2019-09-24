@@ -6,6 +6,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 
+
 void main() {
   runApp(new MyApp());
 }
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var title = 'Toko App';
+
     return new MaterialApp(
       title: title,
       routes: {
@@ -52,6 +54,8 @@ class MyAppHomePage extends StatefulWidget {
 
 
 class _MyAppState extends State<MyAppHomePage> {
+
+
   void _openHistory() {
     Navigator.of(context).pushNamed('/history');
   }
